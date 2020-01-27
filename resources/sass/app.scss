@@ -1,0 +1,47 @@
+
+@import "./mixins";
+@import "~bootstrap";
+@import "~normalize.css";
+@import "~nprogress/nprogress";
+
+
+@include font-face( 'AR', '../fonts/Akkurat',$exts:woff);
+@include font-face( 'AL', '../fonts/Akkurat-Light',$exts:woff);
+@include font-face( 'AB', '../fonts/Akkurat-Bold',$exts:woff);
+
+
+html, body , .wrapper {
+    color: #636b6f;
+    font-family: 'AL', sans-serif;
+    font-weight: 200;
+    //height: 100vh;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+ul{
+    margin:0;
+    padding:0
+}
+a:hover{
+    text-decoration:none
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0
+}
+
+.page-title{
+    margin:190px;
+    text-align: center;
+    font-weight: 100;
+    color:white;
+    font-size: 40px;
+}
