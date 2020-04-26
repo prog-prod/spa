@@ -2174,24 +2174,60 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     init: function init() {
-      this.camera = new three__WEBPACK_IMPORTED_MODULE_0__["PerspectiveCamera"](70, window.innerWidth / window.innerHeight, 0.01, 10);
-      this.camera.position.z = 1;
+      // this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+      this.camera = new three__WEBPACK_IMPORTED_MODULE_0__["PerspectiveCamera"](45, window.innerWidth / window.innerHeight, 1, 500); // this.camera.position.z = 1;
+
+      this.camera.position.set(0, 0, 100);
+      this.camera.lookAt(0, 0, 0);
       this.scene = new three__WEBPACK_IMPORTED_MODULE_0__["Scene"]();
       this.geometry = new three__WEBPACK_IMPORTED_MODULE_0__["BoxGeometry"](0.3, 0.3, 0.3);
-      this.material = new three__WEBPACK_IMPORTED_MODULE_0__["MeshNormalMaterial"]();
-      this.mesh = new three__WEBPACK_IMPORTED_MODULE_0__["Mesh"](this.geometry, this.material);
+      this.geometry = new three__WEBPACK_IMPORTED_MODULE_0__["Geometry"]();
+      this.geometry.vertices.push(new three__WEBPACK_IMPORTED_MODULE_0__["Vector3"](-20, 0, 0));
+      this.geometry.vertices.push(new three__WEBPACK_IMPORTED_MODULE_0__["Vector3"](0, -20, 0));
+      this.geometry.vertices.push(new three__WEBPACK_IMPORTED_MODULE_0__["Vector3"](0, 0, -20));
+      this.geometry.vertices.push(new three__WEBPACK_IMPORTED_MODULE_0__["Vector3"](-20, 0, 0)); // var verticesOfCube = [
+      //     -1,-1,-1,    1,-1,-1,    1, 1,-1,    -1, 1,-1,
+      //     -1,-1, 1,    1,-1, 1,    1, 1, 1,    -1, 1, 1,
+      // ];
+      //
+      // var indicesOfFaces = [
+      //     2,1,0,    0,3,2,
+      //     0,4,7,    7,3,0,
+      //     0,1,5,    5,4,0,
+      //     1,2,6,    6,5,1,
+      //     2,3,7,    7,6,2,
+      //     4,5,6,    6,7,4
+      // ];
+      // this.geometry = new THREE.PolyhedronGeometry( verticesOfCube, indicesOfFaces, 25, 1 );
+      // this.material = new THREE.MeshNormalMaterial();
+
+      this.material = new three__WEBPACK_IMPORTED_MODULE_0__["LineBasicMaterial"]({
+        color: '#ffffff'
+      }); // this.mesh = new THREE.Mesh( this.geometry, this.material );
+
+      this.mesh = new three__WEBPACK_IMPORTED_MODULE_0__["Line"](this.geometry, this.material); // this.scene.add( this.mesh );
+      //
+      // var meshMaterial = new THREE.MeshNormalMaterial();
+      // meshMaterial.side = THREE.DoubleSide;
+      // var wireFrameMat = new THREE.MeshBasicMaterial();
+      // wireFrameMat.wireframe = true;
+      // create a multimaterial
+      // this.mesh = THREE.SceneUtils.createMultiMaterialObject(new THREE.IcosahedronGeometry(10,0), [meshMaterial, wireFrameMat]);
+      // add the sphere to the scene
+
       this.scene.add(this.mesh);
       this.renderer = new three__WEBPACK_IMPORTED_MODULE_0__["WebGLRenderer"]({
-        antialias: true
+        antialias: true,
+        alpha: true
       });
+      this.renderer.setClearColor("#000000");
       var container = document.getElementById('canvas');
-      console.log(container); // this.renderer.setSize($(container).width(), $(window).height());
-
+      this.renderer.setSize($(container).width(), $(window).height(), false);
       container.appendChild(this.renderer.domElement); // this.renderer.setSize( window.innerWidth, window.innerHeight );
       // document.body.appendChild( this.renderer.domElement );
     },
     animate: function animate() {
-      requestAnimationFrame(this.animate); // this.mesh.rotation.x += 0.01;
+      requestAnimationFrame(this.animate); // this.mesh.rotation.x += 0.02;
 
       this.mesh.rotation.y += 0.02;
       this.renderer.render(this.scene, this.camera);
@@ -6919,7 +6955,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\ncanvas {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top:0;\n    z-index:-1;\n}\n", ""]);
+exports.push([module.i, "\ncanvas {\n    position: absolute;\n    width: 100%;\n    height: 320px;\n    top:0;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -89516,35 +89552,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", { staticClass: "page-title" }, [
-      _vm._v(_vm._s(_vm.capitalize(_vm.$route.name)))
-    ]),
-    _vm._v(" "),
-    _c("p", [
-      _vm._v(
-        "\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto debitis doloremque dolorum, eaque excepturi laborum, magnam minus, nisi quae quisquam veritatis? Adipisci atque deserunt dicta iste maxime sequi unde?\n    "
-      )
-    ]),
-    _vm._v(" "),
-    _c("img", {
-      attrs: {
-        src:
-          "https://impulse-design.com.ua/images/blog/primery-sajtov-vizitok/primery-sajtov-vizitok4-min.jpg",
-        alt: ""
-      }
-    }),
-    _vm._v(" "),
-    _c("div", {
-      staticStyle: {
-        width: "100%",
-        height: "400px",
-        "background-color": "#00ff00"
-      }
-    })
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h1", { staticClass: "page-title" }, [_vm._v("About me")]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("h4", [_vm._v("Andrii Polyvianyi")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "page-description" }, [
+        _vm._v("\n        Full stack web developer\n    ")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -105196,7 +105223,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 try {
-  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
+  // window.Popper = require('popper.js').default;
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
@@ -106386,8 +106413,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Program Files\OSPanel\domains\spa-laravel\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Program Files\OSPanel\domains\spa-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Program Files\OSPanel\domains\myProjects\spa-laravel\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Program Files\OSPanel\domains\myProjects\spa-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

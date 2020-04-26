@@ -11841,10 +11841,16 @@ a:hover {
 }
 
 .page-title {
-  margin: 190px;
+  margin: 100px;
   text-align: center;
   font-weight: 100;
   color: white;
   font-size: 40px;
+}
+
+#app {
+  background-image: url("/img/5404.png");
+  background-size: 50%;
+  background-color: #000;
 }
 
