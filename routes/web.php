@@ -11,4 +11,5 @@
 |
 */
 
+//Route::get('/', 'MainController@index')->where('any', '.*');
 Route::get('/{any}', 'MainController@index')->where('any', '.*');
