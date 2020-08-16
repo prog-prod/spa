@@ -24,3 +24,4 @@ Route::get('/user/{id}', function($id){
     $user = User::whereId($id)->get();
     return \App\Http\Resources\UsersResources::make($user);
 });
+Route::get('/portfolio','PortfolioController@getAll');

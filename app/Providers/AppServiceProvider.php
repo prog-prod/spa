@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use View;
+use KgBot\LaravelLocalization\Facades\ExportLocalizations;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+
     }
 
     /**
@@ -23,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        View::composer( ['layouts.index'], function ( $view ) {
+
+                    return $view->with( [
+                        'messages' => ExportLocalizations::export()->toArray(),
+                    ] );
+                });
     }
 }

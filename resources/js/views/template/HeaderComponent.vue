@@ -3,7 +3,8 @@
         <brand-component></brand-component>
         <div class="header-menu">
             <ul class="list-inline text-center">
-                <li class="list-inline-item" :class="{active: $route.name === 'dev'}"><router-link :to="{ name: 'dev' }">Dev</router-link></li>
+<!--                <li class="list-inline-item" :class="{active: $route.name === 'dev'}"><router-link :to="{ name: 'dev' }">Dev</router-link></li>-->
+                <li class="list-inline-item" :class="{active: $route.name === 'home'}"><router-link :to="{ name: 'home' }">Home</router-link></li>
                 <li class="list-inline-item" :class="{active: $route.name === 'about'}"><router-link :to="{ name: 'about' }">About</router-link></li>
                 <li class="list-inline-item" :class="{active: $route.name === 'portfolio'}"><router-link :to="{ name: 'portfolio'}">Portfolio</router-link></li>
                 <li class="list-inline-item" :class="{active: $route.name === 'contacts'}"><router-link :to="{ name: 'contacts' }">Contacts</router-link></li>
