@@ -6911,7 +6911,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".footer b[data-v-91ac6b5c] {\n  font-family: \"Source Sans Pro\", sans-serif;\n  font-weight: 700;\n}\n.footer a[data-v-91ac6b5c] {\n  padding: 4px 7px;\n  border-radius: 50%;\n}\n.wrapper[data-v-91ac6b5c] {\n  min-height: 100%;\n  /*overflow: hidden;*/\n  /*background-color:#000;*/\n  /*background-image: url(/img/bg.png);*/\n  /*-webkit-background-size: 100%;*/\n  /*background-size: 100%;*/\n}\nmain[data-v-91ac6b5c] {\n  min-height: 100%;\n}", ""]);
+exports.push([module.i, ".footer b[data-v-91ac6b5c] {\n  font-family: \"Source Sans Pro\", sans-serif;\n  font-weight: 700;\n}\n.footer a[data-v-91ac6b5c] {\n  padding: 4px 7px;\n  border-radius: 50%;\n}\n.wrapper[data-v-91ac6b5c] {\n  min-height: 100%;\n  height: 100%;\n  /*overflow: hidden;*/\n  /*background-color:#000;*/\n  /*background-image: url(/img/bg.png);*/\n  /*-webkit-background-size: 100%;*/\n  /*background-size: 100%;*/\n}\nmain[data-v-91ac6b5c] {\n  /*min-height: 100%;*/\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -63938,7 +63938,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "main inner cover" }, [
-      _c("h1", { staticClass: "cover-heading" }, [_vm._v("Prog_prog Fun.")]),
+      _c("h1", { staticClass: "cover-heading mb-2" }, [
+        _vm._v("Prog_prog Fun.")
+      ]),
       _vm._v(" "),
       _c("p", { staticClass: "lead" }, [
         _vm._v(

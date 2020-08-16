@@ -14553,7 +14553,8 @@ a.text-dark:focus {
 
 html,
 body,
-.wrapper {
+.wrapper,
+#app {
   color: #636b6f;
   font-family: "AL", sans-serif;
   font-weight: 200;

@@ -1,7 +1,7 @@
 <template>
 
                 <div class="main inner cover">
-                    <h1 class="cover-heading">Prog_prog Fun.</h1>
+                    <h1 class="cover-heading mb-2">Prog_prog Fun.</h1>
                     <p class="lead">Welcome to my personal website! I am a web developer. You can see my portfolio or write to me for further cooperation. </p>
                     <p class="lead">
                         <a href="/contacts" class="btn btn-lg btn-secondary">Write to me</a>

@@ -45,6 +45,7 @@
     }
     .wrapper{
         min-height: 100%;
+        height: 100%;
         /*overflow: hidden;*/
         /*background-color:#000;*/
         /*background-image: url(/img/bg.png);*/
@@ -52,6 +53,6 @@
         /*background-size: 100%;*/
     }
     main{
-        min-height: 100%;
+        /*min-height: 100%;*/
     }
 </style>

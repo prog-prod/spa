@@ -13,7 +13,7 @@
 @include font-face( 'AB', '../fonts/Akkurat-Bold',$exts:woff);
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;900&display=swap');
 
-html, body , .wrapper {
+html, body , .wrapper, #app {
     color: #636b6f;
     font-family: 'AL', sans-serif;
     font-weight: 200;
