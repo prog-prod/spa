@@ -14,7 +14,8 @@
     @media (max-width: 991px ) {
         .header-brand {
             img {
-                height: 50px;
+                height: 33px;
+                margin: 7px 0px;
             }
         }
     }

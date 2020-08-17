@@ -23,6 +23,11 @@
     }
 </script>
 <style lang="scss" scoped>
+    @media (max-width: 991px ){
+        .main{
+            margin: 30% auto !important;
+        }
+    }
     .main{
         h1{
             font-family: 'Source Sans Pro', sans-serif;
@@ -32,7 +37,6 @@
         color:white;
         text-align: center;
         margin: 200px auto;
-        top:40%;
 
     }
 </style>
