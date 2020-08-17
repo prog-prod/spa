@@ -1,16 +1,21 @@
 <template>
-    <header>
-        <brand-component></brand-component>
-        <div class="header-menu">
-            <ul class="list-inline text-center">
-<!--                <li class="list-inline-item" :class="{active: $route.name === 'dev'}"><router-link :to="{ name: 'dev' }">Dev</router-link></li>-->
-                <li class="list-inline-item" :class="{active: $route.name === 'home'}"><router-link :to="{ name: 'home' }">Home</router-link></li>
-                <li class="list-inline-item" :class="{active: $route.name === 'about'}"><router-link :to="{ name: 'about' }">About</router-link></li>
-                <li class="list-inline-item" :class="{active: $route.name === 'portfolio'}"><router-link :to="{ name: 'portfolio'}">Portfolio</router-link></li>
-                <li class="list-inline-item" :class="{active: $route.name === 'contacts'}"><router-link :to="{ name: 'contacts' }">Contacts</router-link></li>
-                <li class="list-inline-item"><search-component></search-component></li>
-            </ul>
-        </div>
+    <header class="header-menu">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><brand-component></brand-component></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars text-white fa-2x" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+<!--                    <li class="nav-item " :class="{active: $route.name === 'dev'}"><router-link class="nav-link" :to="{ name: 'dev' }">Dev</router-link></li>-->
+                    <li class="nav-item" :class="{active: $route.name === 'home'}"><router-link class="nav-link" :to="{ name: 'home' }">Home</router-link></li>
+                    <li class="nav-item" :class="{active: $route.name === 'about'}"><router-link class="nav-link" :to="{ name: 'about' }">About</router-link></li>
+                    <li class="nav-item" :class="{active: $route.name === 'portfolio'}"><router-link class="nav-link" :to="{ name: 'portfolio'}">Portfolio</router-link></li>
+                    <li class="nav-item" :class="{active: $route.name === 'contacts'}"><router-link class="nav-link" :to="{ name: 'contacts' }">Contacts</router-link></li>
+<!--                    <li class="nav-item"><search-component></search-component></li>-->
+                </ul>
+            </div>
+        </nav>
     </header>
 </template>
 
@@ -31,6 +36,18 @@
 </script>
 
 <style scoped>
+    .navbar-collapse{
+        justify-content: center;
+    }
+    @media (max-width: 991px ){
+        .navbar-nav{
+            text-align: center;
+        }
+        .header-menu ul li{
+            margin-right: 0px !important;
+        }
+    }
+
     header{
         padding: 10px 10px 40px;
         position: relative;

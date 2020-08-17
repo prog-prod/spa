@@ -10,7 +10,14 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    @media (max-width: 991px ) {
+        .header-brand {
+            img {
+                height: 50px;
+            }
+        }
+    }
     .header-brand{
         position: absolute;
         top:10px;
