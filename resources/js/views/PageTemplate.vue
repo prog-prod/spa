@@ -2,7 +2,7 @@
     <div class="page-content position-relative" :class="{'page-loading' : isLoading}">
         <div class="position-relative page-content-body">
             <slot></slot>
-            <pulse-loader :loading="isLoading" color="#555"  class="spinner-vue position-absolute"></pulse-loader>
+            <pulse-loader :loading="isLoading" color="#007bff"  class="spinner-vue position-absolute"></pulse-loader>
         </div>
         <hr>
         <div class="footer clearfix">

@@ -1,6 +1,6 @@
 <template>
     <a href="/" class="header-brand">
-        <img src="/img/logo.png" alt="My brand">
+        <img src="/img/logo3.png" alt="My brand">
     </a>
 </template>
 

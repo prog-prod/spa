@@ -6,11 +6,11 @@
                     <h1 class="page-title">{{capitalize($route.name)}} <small>Type me a message</small></h1>
                     <hr>
                     <p>
-                        You can write to me ny E-mail or Telegram if you have a question,
+                        You can write to me by E-mail or Telegram if you have a question
                         or you want to order a website or another project.
                     </p>
-                    <ul>
-                        <li>My Email: <a href="email:polyvyanyy.andrii@gmail.com">polyvyanyy.andrii@gmail.com</a></li>
+                    <ul class="list-unstyled">
+                        <li>My Email: <a href="mailto:polyvyanyy.andrii@gmail.com">polyvyanyy.andrii@gmail.com</a></li>
                         <li>My Telegram: <a href="https://t.me/prog_prog" target="_blank">ProgProg</a></li>
                     </ul>
                 </page-template>

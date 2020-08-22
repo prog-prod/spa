@@ -1,19 +1,17 @@
 <template>
-
-                <div class="main inner cover">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="cover-heading mb-2">Prog_prog </h1>
-                                <p class="lead">Welcome to my personal website! I am a web developer. You can see my portfolio or write to me for further cooperation. </p>
-                                <p class="lead mt-4">
-                                    <a href="/contacts" class="btn btn-lg btn-secondary">Write to me</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
+    <div class="main inner cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="cover-heading mb-3">Prog_prog </h1>
+                    <p class="lead text-grey-color">Welcome to my personal website! I am a web developer. You can see my portfolio or write to me for further cooperation. </p>
+                    <p class="lead mt-4">
+                        <router-link class="btn btn-lg btn-primary" :to="{ name: 'contacts' }">Write to me</router-link>
+                    </p>
                 </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -23,6 +21,9 @@
     }
 </script>
 <style lang="scss" scoped>
+    .text-grey-color{
+        color:#c5c5c5;
+    }
     @media (max-width: 991px ){
         .main{
             margin: 30% auto !important;

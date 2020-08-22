@@ -15,7 +15,7 @@
                         Full stack web developer
                     </small></h3>
                     <p class="about-me-text">
-                        Hi everyone! I am a web developer.I work efficiently and I don`t like to frame anyone so I take
+                        Hi everyone! <br> I am a web developer.I work efficiently and I don`t like to frame anyone so I take
                         a responsible in doing the tasks.I constantly learn something new and develop in programming.
                     </p>
                     <hr>
@@ -129,6 +129,12 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 
+    @media (max-width: 991px){
+        .about-me-text {
+            width: auto !important;
+            margin: 0 !important;
+        }
+    }
     .about-me-text {
         width: 50%;
         margin: 25px auto;

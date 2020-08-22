@@ -1,5 +1,5 @@
 <template>
-    <footer class="position-absolute">
+    <footer class="p-4">
         <div>© 2020</div>
     </footer>
 </template>

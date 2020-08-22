@@ -12,11 +12,11 @@
                                     <img class="bd-placeholder-img card-img-top" :src="'/img/' + portfolio.img"
                                          width="100%" height="225" alt="">
                                     <div class="card-body">
-                                        <h4 class="card-text">{{portfolio.name}}</h4>
+                                        <h4 class="card-text"><b>{{portfolio.name}}</b></h4>
                                         <p class="card-text">{{portfolio.desc}}</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a :href="'https://'+portfolio.link"
-                                               class="btn btn-sm btn-outline-secondary">View</a>
+                                               class="btn btn-sm btn-outline-primary">View</a>
                                             <small class="text-muted">{{portfolio.time}}</small>
                                         </div>
                                     </div>
