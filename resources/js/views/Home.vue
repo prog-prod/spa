@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="cover-heading mb-3">Prog_prog </h1>
+                    <h1 class="cover-heading mb-3">@prog_prog_ </h1>
                     <p class="lead text-grey-color">Welcome to my personal website! I am a web developer. You can see my portfolio or write to me for further cooperation. </p>
                     <p class="lead mt-4">
                         <router-link class="btn btn-lg btn-primary" :to="{ name: 'contacts' }">Write to me</router-link>
