@@ -40,7 +40,7 @@
     }
     @media (max-width: 991px ){
         .main{
-            margin: 30% auto !important;
+            margin: 6% auto !important;
         }
     }
     .main{

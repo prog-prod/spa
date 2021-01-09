@@ -6968,7 +6968,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".text-grey-color[data-v-63cd6604] {\n  color: #c5c5c5;\n}\n@media (max-width: 991px) {\n.main[data-v-63cd6604] {\n    margin: 30% auto !important;\n}\n}\n.main[data-v-63cd6604] {\n  max-width: 600px;\n  color: white;\n  text-align: center;\n  margin: 200px auto;\n}\n.main b[data-v-63cd6604] {\n  font-weight: bold;\n}\n.main h1[data-v-63cd6604] {\n  font-family: \"Source Sans Pro\", sans-serif;\n  font-weight: 700;\n}", ""]);
+exports.push([module.i, ".text-grey-color[data-v-63cd6604] {\n  color: #c5c5c5;\n}\n@media (max-width: 991px) {\n.main[data-v-63cd6604] {\n    margin: 6% auto !important;\n}\n}\n.main[data-v-63cd6604] {\n  max-width: 600px;\n  color: white;\n  text-align: center;\n  margin: 200px auto;\n}\n.main b[data-v-63cd6604] {\n  font-weight: bold;\n}\n.main h1[data-v-63cd6604] {\n  font-family: \"Source Sans Pro\", sans-serif;\n  font-weight: 700;\n}", ""]);
 // Exports
 module.exports = exports;
 
