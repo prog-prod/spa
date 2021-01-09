@@ -61,7 +61,7 @@
     }
 
     .header-menu ul li{
-        margin-right:16px;
+        margin-right:1rem;
 
     }
     .header-menu ul li:last-child{
@@ -77,11 +77,16 @@
         border-bottom:1px solid transparent;
         transition: all .3s ease-in-out;
         opacity:0.6;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
     .header-menu ul li a:hover{
-       border-bottom-color: #ffffff;
+       border-bottom-color: #8c8c8c;
     }
     .header-menu ul li.active a{
         opacity:1;
+    }
+    .nav-link {
+        padding: 0.3rem 1rem;
     }
 </style>

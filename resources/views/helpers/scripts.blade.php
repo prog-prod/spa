@@ -13,4 +13,5 @@
     window.default_locale = "{{ config('app.locale') }}";
     window.fallback_locale = "{{ config('app.fallback_locale') }}";
     window.messages = @json($messages);
+    window.shared_links = @json(config('app.shared_links'));
 </script>

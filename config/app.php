@@ -56,6 +56,12 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
+    'shared_links' => [
+        'github' => 'https://github.com/andrew-mintymint',
+        'linkedin' => 'https://www.linkedin.com/in/andrii-polyvianyi-01aa93164/',
+        'instagram' => 'https://www.instagram.com/prog_prog_/',
+        'youtube' => ''
+    ],
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

@@ -19,6 +19,7 @@ export default new Vuex.Store({
         miniSidebarClass: 'minimize-sidebar',
         user: window.user,
         meta: window.meta,
+        shared_links: window.shared_links,
         isSidebarMini: window.isSidebarMini,
 
         portfolios: {}
@@ -26,6 +27,9 @@ export default new Vuex.Store({
     getters: {
         user: state => {
             return state.user
+        },
+        shared_links: state => {
+            return state.shared_links
         },
         meta: state => {
             return state.meta

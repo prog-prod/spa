@@ -71,7 +71,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Frishka (GitHub)</h5>
                                 <p class="card-text">Full Stack Web Developer</p>
-                                <a href="https://github.com/Frishka" class="btn btn-primary">Go there</a>
+                                <a href="https://github.com/Frishka" class="btn btn-primary">Follow the link</a>
                             </div>
                         </div>
                         <div class="card d-inline-block" style="width: 18rem;">
@@ -81,7 +81,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Frishka (Bitbucket)</h5>
                                 <p class="card-text">Full Stack Web Developer</p>
-                                <a href="https://bitbucket.org/Frishka/" class="btn btn-primary">Go there</a>
+                                <a href="https://bitbucket.org/Frishka/" class="btn btn-primary">Follow the link</a>
                             </div>
                         </div>
                     </div>

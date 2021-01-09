@@ -10,9 +10,9 @@
                 <b>Follow me, I am in:</b>
             </div>
             <div class="pull-right">
-                <a href="https://www.instagram.com/prog_prog_/" class="btn-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/andrii-polyvianyi-01aa93164/" class="btn-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://github.com/Frishka" class="btn-github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a :href="shared_links.instagram" class="btn-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a :href="shared_links.linkedin" class="btn-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a :href="shared_links.github" class="btn-github"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
     export default {
         name: "PageTemplate",
         computed:{
-            ...mapGetters(['isLoading'])
+            ...mapGetters(['isLoading','shared_links'])
         },
         components:{
             PulseLoader

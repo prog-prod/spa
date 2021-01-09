@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <page-template>
-                    <h1 class="page-title">{{capitalize($route.name)}} <small>My projects or sites</small></h1>
+                    <h1 class="page-title">{{capitalize($route.name)}} <small>My projects & sites</small></h1>
                     <hr>
                     <div class="row" v-for="portfolios in portfoliosArray">
                         <div class="col-md-4" v-for="portfolio in portfolios">
