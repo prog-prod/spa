@@ -57,16 +57,14 @@ jobs:
       #- run: ./vendor/bin/codecept build
       #- run: ./vendor/bin/codecept run
   deploy:
-   machine:
-       enabled: true
-   steps:
-    - add_ssh_keys:
+    steps: 
+      - add_ssh_keys:
         fingerprints:
           - e8:eb:18:fa:39:9e:d6:af:aa:ff:37:5e:f0:9d:e0:31
-    - run: pwd
-    - run: ls -ls      
-    - run: cd /
-    - run: ls -ls
+      - run: pwd
+      - run: ls -ls      
+      - run: cd /
+      - run: ls -ls
 workflows:
    version: 2
    build-and-deploy:
