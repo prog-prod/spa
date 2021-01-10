@@ -63,8 +63,9 @@ jobs:
     - add_ssh_keys:
         fingerprints:
           - e8:eb:18:fa:39:9e:d6:af:aa:ff:37:5e:f0:9d:e0:31
-    - run:
-        cd /var/www/progprog.fun && git pull origin master 
+    - run: pwd      
+    - run: cd /var/www/progprog.fun'
+    - run: git pull origin master  
 workflows:
    version: 2
    build-and-deploy:
