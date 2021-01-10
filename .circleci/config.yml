@@ -64,10 +64,8 @@ jobs:
       - add_ssh_keys:
           fingerprints:
               - e8:eb:18:fa:39:9e:d6:af:aa:ff:37:5e:f0:9d:e0:31
-      - run: pwd
-      - run: ls -ls      
-      - run: cd /
-      - run: ls -ls
+      - commands:
+          - ssh progprog@192.162.113.99 'cd /var/www/progprog.fun && git pull origin develop'
 workflows:
    version: 2
    build-and-deploy:
