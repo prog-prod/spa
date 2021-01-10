@@ -57,6 +57,9 @@ jobs:
       #- run: ./vendor/bin/codecept build
       #- run: ./vendor/bin/codecept run
   deploy:
+    machine:
+        enabled: true
+    working_directory: /var/www/progprog.fun
     steps: 
       - add_ssh_keys:
           fingerprints:
