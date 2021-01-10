@@ -46,6 +46,7 @@ jobs:
           key: node-v1-{{ checksum "package.json" }}
           paths:
             - node_modules
+  
 
       # prepare the database
       # - run: touch storage/testing.sqlite
@@ -53,5 +54,22 @@ jobs:
 
       # run tests with phpunit or codecept
       #- run: ./vendor/bin/phpunit
-      - run: ./vendor/bin/codecept build
-      - run: ./vendor/bin/codecept run
+      #- run: ./vendor/bin/codecept build
+      #- run: ./vendor/bin/codecept run
+deploy-job:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - e8:eb:18:fa:39:9e:d6:af:aa:ff:37:5e:f0:9d:e0:31
+
+workflows:
+   version: 2
+   build-and-deploy:
+     jobs:
+       - build
+       - deploy:
+           requires:
+             - build # only deploy once build job has completed
+           filters:
+             branches:
+               only: master # only deploy on the master branch
