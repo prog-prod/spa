@@ -59,7 +59,7 @@ jobs:
   deploy:
     machine:
         enabled: true
-    working_directory: /var/www/progprog.fun
+    #working_directory: /var/www/progprog.fun
     steps: 
       - add_ssh_keys:
           fingerprints:
