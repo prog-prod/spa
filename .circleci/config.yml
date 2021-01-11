@@ -59,20 +59,20 @@ jobs:
   deploy:
     machine:
         enabled: true
-    working_directory: /var/www/progprog.fun
+    #working_directory: /var/www/progprog.fun
     steps: 
-      - add_ssh_keys:
-          fingerprints:
-              - e8:eb:18:fa:39:9e:d6:af:aa:ff:37:5e:f0:9d:e0:31
-      - run: ssh progprog@192.162.113.99 'cd /var/www/progprog.fun && git pull origin develop'
+      # - add_ssh_keys:
+      #     fingerprints:
+      #         - e8:eb:18:fa:39:9e:d6:af:aa:ff:37:5e:f0:9d:e0:31
+      - run: ssh -p 22 progprog@192.162.113.99 "cd /var/www/progprog.fun; git pull; exit" 
 workflows:
    version: 2
    build-and-deploy:
      jobs:
-       #- build
+       - build
        - deploy:
            requires:
-             #- build # only deploy once build job has completed
+             - build # only deploy once build job has completed
            filters:
              branches:
                only: master # only deploy on the master branch
