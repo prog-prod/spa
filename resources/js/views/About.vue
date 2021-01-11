@@ -49,11 +49,11 @@
                                 <img src="/img/webpack.png" class="d-inline-block" alt="">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselSkills" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselSkills" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -103,6 +103,15 @@
 </script>
 
 <style scoped>
+    .carousel-control-next{
+        right:-20px;
+    }
+    .carousel-control-prev{
+        left:-20px;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        filter: contrast(0.1);
+    }
     #carouselSkills {
         margin: 30px auto;
     }
