@@ -17,7 +17,7 @@
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a :href="'https://'+portfolio.link"
                                                class="btn btn-sm btn-outline-primary">View</a>
-                                            <small class="text-muted">{{portfolio.time}}</small> 
+                                            <small class="text-muted">{{portfolio.time}}</small>
                                         </div>
                                     </div>
                                 </div>
