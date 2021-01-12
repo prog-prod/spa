@@ -6,6 +6,7 @@ import Dev from '../views/Dev'
 import Contacts from '../views/Contacts'
 import Portfolio from '../views/Portfolio'
 import NotFoundComponent from '../views/NotFoundComponent'
+import Workspace from "../views/Workspace";
 
 
 export default  [
@@ -50,6 +51,11 @@ export default  [
         path: '/portfolio',
         name: 'portfolio',
         component: Portfolio,
+        props:true
+    },{
+        path: '/workspace',
+        name: 'workspace',
+        component: Workspace,
         props:true
     },
 ];

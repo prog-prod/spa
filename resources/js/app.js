@@ -32,6 +32,6 @@ particlesJS.load('particles-js', 'js/particles.json', function() {
 const app = new Vue({
     store,
     components: { App },
-    router,
+    router
 }).$mount('#app');
 
