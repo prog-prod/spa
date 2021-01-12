@@ -1,6 +1,6 @@
 <template>
     <footer class="p-4">
-        <div>© 2020 - 2021</div>
+        <div>© 2016 - 2021</div>
     </footer>
 </template>
 
