@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <page-template>
                     <h1 class="page-title">My workspace
-                        <small>Comfortable work is the secret to be productive.</small>
+                        <small>Comfortable work is a secret to be productive.</small>
                     </h1>
 
                     <hr>
@@ -20,7 +20,7 @@
 
                         </p>
                         <blockquote class="blockquote"><p>A cup of coffee and a lot of interesting
-                            tasks are enough for a good and productive day, and the daily positive attitude is already have.</p></blockquote>
+                            tasks are enough for a good and productive day, and daily positive attitude is already have.</p></blockquote>
                         <br />
 <!--                        <blockquote class="otro-blockquote">-->
 <!--                            For a good and productive day, a cup of coffee and a lot of interesting-->
