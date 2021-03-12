@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <page-template>
-                    <h1 class="page-title">My workspace
+                    <h1 class="page-title">My workplace
                         <small>Comfortable work is a secret to be productive.</small>
                     </h1>
 
