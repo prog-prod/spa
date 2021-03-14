@@ -11,7 +11,7 @@
                     <li class="nav-item" :class="{active: $route.name === 'home'}"><router-link class="nav-link" :to="{ name: 'home' }">Home</router-link></li>
                     <li class="nav-item" :class="{active: $route.name === 'about'}"><router-link class="nav-link" :to="{ name: 'about' }">About</router-link></li>
                     <li class="nav-item" :class="{active: $route.name === 'portfolio'}"><router-link class="nav-link" :to="{ name: 'portfolio'}">Portfolio</router-link></li>
-                    <li class="nav-item" :class="{active: $route.name === 'workspace'}"><router-link class="nav-link" :to="{ name: 'workspace'}">Workspace</router-link></li>
+<!--                    <li class="nav-item" :class="{active: $route.name === 'workspace'}"><router-link class="nav-link" :to="{ name: 'workspace'}">Workspace</router-link></li>-->
                     <li class="nav-item" :class="{active: $route.name === 'contacts'}"><router-link class="nav-link" :to="{ name: 'contacts' }">Contacts</router-link></li>
 <!--                    <li class="nav-item"><search-component></search-component></li>-->
                 </ul>
