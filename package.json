@@ -39,7 +39,7 @@
         "parallax-js": "^3.1.0",
         "particles.js": "^2.0.0",
         "popper.js": "^1.16.1",
-        "three": "^0.112.1",
+        "three": "^0.137.0",
         "vue": "^2.6.11",
         "vue-axios": "^2.1.5",
         "vue-parallaxy": "^1.1.1",
