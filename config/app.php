@@ -57,7 +57,7 @@ return [
     'asset_url' => env('ASSET_URL', null),
 
     'shared_links' => [
-        'github' => 'https://github.com/progprod',
+        'github' => 'https://github.com/prog-prod',
         'linkedin' => 'https://www.linkedin.com/in/andrii-polyvianyi/',
         'instagram' => 'https://www.instagram.com/prog_prog_/',
         'youtube' => ''
